@@ -28,8 +28,3 @@ nav:
   - Home: index.md
   - User Guide: user-guide.md
   - Developer Docs: developer-docs.md
-  - Architecture: architecture.md
-  - Flashing: flashing.md
-  - Validation: validation.md
-  - Troubleshooting: troubleshooting.md
-  - Upstream Notes: upstream-notes.md

@@ -47,11 +47,6 @@ idf.py -p COM3 monitor
 - [docs/index.md](./docs/index.md)
 - [docs/user-guide.md](./docs/user-guide.md)
 - [docs/developer-docs.md](./docs/developer-docs.md)
-- [docs/architecture.md](./docs/architecture.md)
-- [docs/flashing.md](./docs/flashing.md)
-- [docs/validation.md](./docs/validation.md)
-- [docs/troubleshooting.md](./docs/troubleshooting.md)
-- [docs/upstream-notes.md](./docs/upstream-notes.md)
 
 ## Docs Site
 
