@@ -137,7 +137,8 @@ Vendor-native tools (ESP-IDF) are preferred over wrappers unless proven stable.
 |  |- architecture.md
 |  |- flashing.md
 |  |- validation.md
-|  `- troubleshooting.md
+|  |- troubleshooting.md
+|  `- retrospective.md
 |
 |- configs/
 |  |- env.example

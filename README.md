@@ -49,3 +49,4 @@ idf.py -p COM3 monitor
 - [docs/flashing.md](./docs/flashing.md)
 - [docs/validation.md](./docs/validation.md)
 - [docs/troubleshooting.md](./docs/troubleshooting.md)
+- [docs/retrospective.md](./docs/retrospective.md)

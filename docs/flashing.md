@@ -6,7 +6,7 @@
 
 1. ESP-IDF toolchain installed (`./scripts/setup.sh`).
 2. ESP-IDF environment loaded in current shell:
-`. "${HOME}/esp/esp-idf/export.sh"`
+   `. "${HOME}/esp/esp-idf/export.sh"`
 3. USB-connected ESP32-H2-DevKitM-1 on native ESP32-H2 USB port.
 4. User has serial permissions (see Linux permission fix section).
 

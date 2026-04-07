@@ -4,12 +4,12 @@ Flashing alone is not success. Validate at four stages.
 
 ## Validation Matrix
 
-| Stage | Check | Pass Criteria | Fail Indicators |
-| --- | --- | --- | --- |
-| 1. Flash | `idf.py flash` result | Exit code `0`, no write/hash errors | Non-zero exit, write failure, hash mismatch |
-| 2. Boot | Serial monitor output | Clean startup, OpenThread RCP init messages, no crash loop | Guru Meditation, watchdog resets, reboot loop |
-| 3. RCP Link | Host-side Spinel attach | Host connects without timeout, stable agent process | `spinelFrame` timeout, `TimeoutError`, repeated reset failures |
-| 4. System | End-to-end Thread operation | Nodes attach and telemetry flows to host stack | Join failures, no traffic, unstable links |
+| Stage       | Check                       | Pass Criteria                                              | Fail Indicators                                                |
+| ----------- | --------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- |
+| 1. Flash    | `idf.py flash` result       | Exit code `0`, no write/hash errors                        | Non-zero exit, write failure, hash mismatch                    |
+| 2. Boot     | Serial monitor output       | Clean startup, OpenThread RCP init messages, no crash loop | Guru Meditation, watchdog resets, reboot loop                  |
+| 3. RCP Link | Host-side Spinel attach     | Host connects without timeout, stable agent process        | `spinelFrame` timeout, `TimeoutError`, repeated reset failures |
+| 4. System   | End-to-end Thread operation | Nodes attach and telemetry flows to host stack             | Join failures, no traffic, unstable links                      |
 
 ## Stage 1 And 2 Commands (Linux)
 
