@@ -39,3 +39,8 @@
 
 # debug information files
 *.dwo
+
+# Private files
+_reference/
+working/
+planning/
