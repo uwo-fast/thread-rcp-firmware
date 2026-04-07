@@ -23,12 +23,12 @@ WSL2 is not a supported path for this workflow.
 ### Linux
 
 ```bash
+./scripts/setup.sh
 . "${HOME}/esp/esp-idf/export.sh"
-cd firmware/rcp
-idf.py set-target esp32h2
-idf.py build
-idf.py -p /dev/ttyACM0 flash
-idf.py -p /dev/ttyACM0 monitor
+./scripts/doctor.sh
+./scripts/build_rcp.sh
+PORT=/dev/ttyACM0 ./scripts/flash_rcp.sh
+PORT=/dev/ttyACM0 ./scripts/monitor.sh
 ```
 
 ### Windows (ESP-IDF PowerShell)
