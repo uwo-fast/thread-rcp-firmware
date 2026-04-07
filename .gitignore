@@ -40,7 +40,5 @@
 # debug information files
 *.dwo
 
-# Private files
+# Reference and vendor files
 _reference/
-working/
-planning/
