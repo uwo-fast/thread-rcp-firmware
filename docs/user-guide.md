@@ -67,14 +67,18 @@ If flash does not start on a blank board:
 After uploading firmware, validate readiness before field use.
 
 1. Open monitor and confirm stable boot:
-Linux:
+   Linux:
+
 ```bash
 PORT=/dev/ttyACM0 ./scripts/monitor.sh
 ```
+
 Windows:
+
 ```powershell
 idf.py -p COM3 monitor
 ```
+
 2. Confirm no crash/reboot loops in serial output.
 3. Confirm host-side Spinel link initializes without timeout errors.
 4. Confirm target system can communicate over the Thread network.
@@ -86,12 +90,14 @@ If commissioning fails:
 1. Re-check you are on native ESP32-H2 USB port (not UART bridge port).
 2. Re-check port detection (`/dev/ttyACM*` or `COM*`).
 3. Run clean rebuild:
+
 ```bash
 cd firmware/rcp
 idf.py fullclean
 idf.py set-target esp32h2
 idf.py build
 ```
+
 4. Reflash and monitor again.
 
 ## Related Docs

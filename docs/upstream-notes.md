@@ -17,12 +17,13 @@ Verification summary:
 ## Local Modifications
 
 1. `sdkconfig.defaults`
-Added:
-`CONFIG_OPENTHREAD_RCP_SPINEL_CONSOLE=y`
-`CONFIG_LOG_DEFAULT_LEVEL_INFO=y`
-`CONFIG_OPENTHREAD_RCP_USB_SERIAL_JTAG=y`
+   Added:
+   `CONFIG_OPENTHREAD_RCP_SPINEL_CONSOLE=y`
+   `CONFIG_LOG_DEFAULT_LEVEL_INFO=y`
+   `CONFIG_OPENTHREAD_RCP_USB_SERIAL_JTAG=y`
 
 Reason:
+
 - Enables RCP Spinel console by default and raises default log level for operational diagnostics.
 - Selects native USB Serial JTAG transport (ESP32-H2 USB Type-C port, `/dev/ttyACM*` or `COM*`) instead of UART bridge transport.
 

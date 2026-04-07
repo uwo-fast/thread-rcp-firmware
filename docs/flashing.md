@@ -43,11 +43,13 @@ After first successful programming, auto-reset is usually enough.
 ## Flash Command Examples
 
 Linux:
+
 ```bash
 PORT=/dev/ttyACM0 ./scripts/flash_rcp.sh
 ```
 
 Windows (ESP-IDF PowerShell):
+
 ```powershell
 idf.py -p COM3 flash
 ```
