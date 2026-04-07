@@ -1,0 +1,35 @@
+site_name: Thread RCP Firmware Docs
+site_description: ESP32-H2 OpenThread RCP firmware documentation
+repo_url: https://github.com/uwo-fast/thread-rcp-firmware
+edit_uri: ""
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+docs_dir: docs
+
+# Keep retrospective content in the repository but out of the published site.
+exclude_docs: |
+  retrospective.md
+
+nav:
+  - Home: index.md
+  - User Guide: user-guide.md
+  - Developer Docs: developer-docs.md
+  - Architecture: architecture.md
+  - Flashing: flashing.md
+  - Validation: validation.md
+  - Troubleshooting: troubleshooting.md
+  - Upstream Notes: upstream-notes.md

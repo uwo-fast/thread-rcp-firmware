@@ -42,3 +42,6 @@
 
 # Reference and vendor files
 _reference/
+
+# Site build output
+site/

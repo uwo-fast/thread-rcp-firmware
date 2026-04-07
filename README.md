@@ -1,6 +1,6 @@
 # thread-rcp-firmware
 
-Canonical, reproducible firmware workflow for running an [ESP32-H2-DevKitM-1](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#getting-started) as an OpenThread RCP.
+Reproducible firmware workflow for running an [ESP32-H2-DevKitM-1](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#getting-started) as an OpenThread RCP.
 
 ## Prerequisites
 
@@ -45,9 +45,18 @@ idf.py -p COM3 monitor
 ## Documentation
 
 - [context.md](./context.md)
+- [docs/index.md](./docs/index.md)
+- [docs/user-guide.md](./docs/user-guide.md)
+- [docs/developer-docs.md](./docs/developer-docs.md)
 - [docs/architecture.md](./docs/architecture.md)
 - [docs/flashing.md](./docs/flashing.md)
 - [docs/validation.md](./docs/validation.md)
 - [docs/troubleshooting.md](./docs/troubleshooting.md)
 - [docs/retrospective.md](./docs/retrospective.md)
 - [docs/upstream-notes.md](./docs/upstream-notes.md)
+
+## Docs Site
+
+- Static site generator: MkDocs + Material
+- Deploy model: GitHub Pages via GitHub Actions artifact deployment (`.github/workflows/pages.yml`)
+- Site-only exclusion: `docs/retrospective.md` is kept in-repo but excluded from published site

@@ -123,6 +123,10 @@ Vendor-native tools (ESP-IDF) are preferred over wrappers unless proven stable.
 
 ```text
 .
+|- .github/
+|  `- workflows/
+|     `- pages.yml         # GitHub Pages deploy workflow (Actions artifact deploy)
+|
 |- firmware/
 |  `- rcp/                 # ESP-IDF project (RCP firmware)
 |
@@ -134,6 +138,9 @@ Vendor-native tools (ESP-IDF) are preferred over wrappers unless proven stable.
 |  `- monitor.sh           # serial monitor
 |
 |- docs/
+|  |- index.md
+|  |- user-guide.md
+|  |- developer-docs.md
 |  |- architecture.md
 |  |- flashing.md
 |  |- validation.md
@@ -143,6 +150,8 @@ Vendor-native tools (ESP-IDF) are preferred over wrappers unless proven stable.
 |
 |- env.example
 |- requirements.txt        # Python dependencies
+|- requirements-docs.txt   # Docs site dependencies (MkDocs)
+|- mkdocs.yml              # Docs site configuration
 |
 `- context.md              # this file
 ```
