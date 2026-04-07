@@ -1,25 +1,27 @@
 ## Firmware Provenance
 
-Source path used for this Phase 0 bootstrap:
+Canonical upstream source:
 
-- Local snapshot: `_reference/esp-idf-master/examples/openthread/ot_rcp`
-- Upstream project: https://github.com/espressif/esp-idf/tree/v6.0/examples/openthread/ot_rcp
-- Copied: 2026-04-07
+- Repository: `https://github.com/espressif/esp-idf`
+- Tag: `v6.0`
+- Commit: `662a3be35475` (detached HEAD from `git clone --depth 1 --branch v6.0`)
+- Example path: `examples/openthread/ot_rcp`
+- Verified and re-synced: `2026-04-07`
 
-Notes:
+Verification summary:
 
-- The source was copied from a local mirror named `esp-idf-master`.
-- The intended canonical upstream baseline for this repo is ESP-IDF `v6.0`.
-- On the next sync pass, validate the copied example against the upstream `v6.0` tag and update this note with the exact commit/tag evidence used.
+1. A direct diff showed the initial local `_reference/esp-idf-master` snapshot was not identical to upstream `v6.0`.
+2. `firmware/rcp` was re-seeded directly from the verified upstream `v6.0` example.
+3. After re-seed, only one intentional local config override is maintained (see below).
 
-## Modifications
+## Local Modifications
 
 1. `sdkconfig.defaults`
-Changed:
+Added:
 `CONFIG_OPENTHREAD_RCP_USB_SERIAL_JTAG=y`
 
 Reason:
-Selects native USB Serial JTAG transport (ESP32-H2 USB Type-C port) instead of UART bridge transport.
+Selects native USB Serial JTAG transport (ESP32-H2 USB Type-C port, `/dev/ttyACM*` or `COM*`) instead of UART bridge transport.
 
 Symbol reference:
 `examples/openthread/ot_rcp/sdkconfig.ci.rcp_usb`
