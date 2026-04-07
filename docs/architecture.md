@@ -1,5 +1,7 @@
 # Architecture
 
+For operational commissioning steps, use [User Guide](user-guide.md). For maintainer policy and design constraints, use [Developer Docs](developer-docs.md).
+
 ## System Diagram
 
 ```text

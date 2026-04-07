@@ -16,7 +16,7 @@ This guide is for researchers who need to flash and commission an ESP32-H2 board
 2. Use ESP-IDF PowerShell terminal.
 3. USB cable connected to the **native ESP32-H2 USB port** on the dev board.
 
-WSL2 is not a supported path for this workflow.
+WSL2 is not supported for this workflow.
 
 ## 2) Setup And Build
 

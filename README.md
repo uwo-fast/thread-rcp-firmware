@@ -16,7 +16,7 @@ Reproducible firmware workflow for running an [ESP32-H2-DevKitM-1](https://docs.
 - ESP-IDF PowerShell terminal
 - USB access to board on `COM*`
 
-WSL2 is not a supported path for this workflow.
+WSL2 is not supported for this workflow.
 
 ## Quick Start
 
@@ -44,7 +44,6 @@ idf.py -p COM3 monitor
 
 ## Documentation
 
-- [context.md](./context.md)
 - [docs/index.md](./docs/index.md)
 - [docs/user-guide.md](./docs/user-guide.md)
 - [docs/developer-docs.md](./docs/developer-docs.md)
@@ -52,7 +51,6 @@ idf.py -p COM3 monitor
 - [docs/flashing.md](./docs/flashing.md)
 - [docs/validation.md](./docs/validation.md)
 - [docs/troubleshooting.md](./docs/troubleshooting.md)
-- [docs/retrospective.md](./docs/retrospective.md)
 - [docs/upstream-notes.md](./docs/upstream-notes.md)
 
 ## Docs Site

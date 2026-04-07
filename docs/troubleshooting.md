@@ -1,10 +1,12 @@
 # Troubleshooting
 
+Use this page for issue triage after following the canonical commissioning flow in [User Guide](user-guide.md).
+
 ## Quick Triage Table
 
 | Symptom                                         | Likely Cause                                            | Fix                                                                                    |
 | ----------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `/dev/ttyACM0` not found                        | Wrong cable, wrong USB port, disconnected board         | Use ESP32-H2 native USB port, verify cable, reconnect board                            |
+| `/dev/ttyACM0` not found                        | Wrong cable, wrong USB port, disconnected board         | Use native ESP32-H2 USB port, verify cable, reconnect board                            |
 | `Permission denied` on `/dev/ttyACM*`           | Linux user not in `dialout`                             | `sudo usermod -a -G dialout "$USER"` and log in again                                  |
 | Flash repeatedly fails on first attempt         | Board not in download mode                              | Hold `BOOT`, tap `RESET`, release `BOOT`, retry flash                                  |
 | Host reports `spinelFrame` timeouts             | Wrong hardware port (UART bridge instead of native USB) | Move cable to native ESP32-H2 USB port                                                 |
