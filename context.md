@@ -123,33 +123,33 @@ Vendor-native tools (ESP-IDF) are preferred over wrappers unless proven stable.
 
 ```text
 .
-â”œâ”€ firmware/
-â”‚  â””â”€ rcp/                # ESP-IDF project (RCP firmware)
-â”‚
-â”œâ”€ scripts/
-â”‚  â”œâ”€ setup.sh           # environment setup
-â”‚  â”œâ”€ doctor.sh          # environment + device validation
-â”‚  â”œâ”€ build_rcp.sh       # canonical build entrypoint
-â”‚  â”œâ”€ flash_rcp.sh       # canonical flash entrypoint
-â”‚  â””â”€ monitor.sh         # serial monitor
-â”‚
-â”œâ”€ docs/
-â”‚  â”œâ”€ architecture.md
-â”‚  â”œâ”€ flashing.md
-â”‚  â”œâ”€ validation.md
-â”‚  â””â”€ troubleshooting.md
-â”‚
-â”œâ”€ configs/
-â”‚  â”œâ”€ env.example
-â”‚  â””â”€ board_profiles/
-â”‚
-â”œâ”€ tools/
-â”‚  â””â”€ requirements.txt   # Python dependencies
-â”‚
-â”œâ”€ upstream/
-â”‚  â””â”€ NOTES.md           # origin tracking and modifications
-â”‚
-â””â”€ context.md            # this file
+|- firmware/
+|  `- rcp/                 # ESP-IDF project (RCP firmware)
+|
+|- scripts/
+|  |- setup.sh             # environment setup
+|  |- doctor.sh            # environment + device validation
+|  |- build_rcp.sh         # canonical build entrypoint
+|  |- flash_rcp.sh         # canonical flash entrypoint
+|  `- monitor.sh           # serial monitor
+|
+|- docs/
+|  |- architecture.md
+|  |- flashing.md
+|  |- validation.md
+|  `- troubleshooting.md
+|
+|- configs/
+|  |- env.example
+|  `- board_profiles/
+|
+|- tools/
+|  `- requirements.txt     # Python dependencies
+|
+|- upstream/
+|  `- NOTES.md             # origin tracking and modifications
+|
+`- context.md              # this file
 ```
 
 ---
@@ -170,10 +170,11 @@ git clone <repo>
 cd thread-rcp-firmware
 
 ./scripts/setup.sh
+. "${HOME}/esp/esp-idf/export.sh"
 ./scripts/doctor.sh
 ./scripts/build_rcp.sh
-./scripts/flash_rcp.sh
-./scripts/monitor.sh
+PORT=/dev/ttyACM0 ./scripts/flash_rcp.sh
+PORT=/dev/ttyACM0 ./scripts/monitor.sh
 ```
 
 This is the **only supported workflow** initially.
