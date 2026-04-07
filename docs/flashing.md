@@ -87,3 +87,4 @@ Then log out and log back in before retrying.
 
 1. Default flow does not include `erase-flash` because that wipes NVS.
 2. If transport mismatch is suspected, verify `CONFIG_OPENTHREAD_RCP_USB_SERIAL_JTAG=y` in `firmware/rcp/sdkconfig.defaults`, then run `idf.py fullclean` and rebuild.
+3. Baseline provenance and local upstream deviations are tracked in `docs/upstream-notes.md`.

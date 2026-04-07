@@ -138,17 +138,11 @@ Vendor-native tools (ESP-IDF) are preferred over wrappers unless proven stable.
 |  |- flashing.md
 |  |- validation.md
 |  |- troubleshooting.md
-|  `- retrospective.md
+|  |- retrospective.md
+|  `- upstream-notes.md
 |
-|- configs/
-|  |- env.example
-|  `- board_profiles/
-|
-|- tools/
-|  `- requirements.txt     # Python dependencies
-|
-|- upstream/
-|  `- NOTES.md             # origin tracking and modifications
+|- env.example
+|- requirements.txt        # Python dependencies
 |
 `- context.md              # this file
 ```
@@ -315,7 +309,7 @@ Common failure domains:
 
 ### Modifying firmware
 
-- changes must be documented in `upstream/NOTES.md`
+- changes must be documented in `docs/upstream-notes.md`
 - must be reproducible from a clean state
 - avoid ad-hoc local patches
 
@@ -372,4 +366,3 @@ without external guidance, manual patching, or debugging environment issues.
 This repository is the **authoritative implementation** of the lab's RCP firmware workflow.
 
 Changes should prioritize clarity, reproducibility, and long-term maintainability over convenience hacks or short-term fixes.
-

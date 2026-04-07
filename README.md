@@ -50,3 +50,4 @@ idf.py -p COM3 monitor
 - [docs/validation.md](./docs/validation.md)
 - [docs/troubleshooting.md](./docs/troubleshooting.md)
 - [docs/retrospective.md](./docs/retrospective.md)
+- [docs/upstream-notes.md](./docs/upstream-notes.md)
