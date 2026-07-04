@@ -45,3 +45,13 @@ _reference/
 
 # Site build output
 site/
+
+# ESP-IDF build output (tracked: sdkconfig.defaults, sdkconfig.ci.*)
+build/
+sdkconfig
+sdkconfig.old
+managed_components/
+dependencies.lock
+
+# Local environment overrides
+.env
