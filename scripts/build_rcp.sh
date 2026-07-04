@@ -2,6 +2,8 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# shellcheck source=/dev/null
+[ -f "${REPO_ROOT}/.env" ] && { set -a; . "${REPO_ROOT}/.env"; set +a; }
 : "${IDF_PATH:?IDF_PATH not set - run: . \${HOME}/esp/esp-idf/export.sh}"
 
 if ! command -v idf.py >/dev/null 2>&1; then
