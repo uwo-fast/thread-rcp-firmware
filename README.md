@@ -50,6 +50,7 @@ idf.py -p COM3 monitor
 
 ## Docs Site
 
+- Published at <https://uwo-fast.github.io/thread-rcp-firmware/>
 - Static site generator: MkDocs + Material
 - Deploy model: GitHub Pages via GitHub Actions artifact deployment (`.github/workflows/pages.yml`)
 - Site-only exclusion: `docs/retrospective.md` is kept in-repo but excluded from published site
