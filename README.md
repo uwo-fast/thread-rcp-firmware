@@ -53,3 +53,11 @@ idf.py -p COM3 monitor
 - Static site generator: MkDocs + Material
 - Deploy model: GitHub Pages via GitHub Actions artifact deployment (`.github/workflows/pages.yml`)
 - Site-only exclusion: `docs/retrospective.md` is kept in-repo but excluded from published site
+
+## License
+
+Original work in this repository (scripts, documentation, and CI) is licensed
+under the [Apache License 2.0](LICENSE).
+
+The firmware under `firmware/rcp/` is derived from the Espressif `ot_rcp` example
+and remains under its upstream CC0-1.0 terms; see the SPDX headers in those files.
